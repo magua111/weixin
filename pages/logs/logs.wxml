@@ -1,0 +1,12 @@
+<scroll-view style='height:1000px' scroll-y='true' upper-threshold='20px' lower-threshold='20px' bindscrolltolower='dixian' bindscroll='yundong'>
+  <view class="container log-list">
+    
+    <block wx:for="{{logs}}" wx:for-item="log">
+      <text class="log-item">{{index + 1}}. {{log}}</text>
+    </block>
+    
+  </view>
+
+
+</scroll-view>
+<image src='{{tempFilePaths}}'></image>
